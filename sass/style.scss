@@ -9,6 +9,8 @@ $custom-color: #b0fffb;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-margin: 70px;
 }
 
 body {
@@ -315,6 +317,10 @@ body {
 
 @media screen and (min-width: 768px) {
 
+    * {
+        scroll-margin: 80px;
+    }
+
     .header {
 
         justify-content: space-around;
@@ -399,6 +405,19 @@ body {
 }
 
 @media screen and (min-width: 975px) {
+
+    .header {
+
+        &__nav {
+            &--item {
+                padding: 0 .5rem;
+                a {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+
     .main {
         .jumbotron {
 

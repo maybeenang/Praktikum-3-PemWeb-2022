@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-margin: 70px;
 }
 
 body {
@@ -285,6 +287,9 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  * {
+    scroll-margin: 80px;
+  }
   .header {
     justify-content: space-around;
     height: 80px;
@@ -344,6 +349,12 @@ body {
   }
 }
 @media screen and (min-width: 975px) {
+  .header__nav--item {
+    padding: 0 0.5rem;
+  }
+  .header__nav--item a {
+    font-size: 1.3rem;
+  }
   .main .jumbotron__content {
     flex: 1;
     padding: 1rem;
