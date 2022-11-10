@@ -286,6 +286,18 @@ body {
   color: #f2e7d5;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #393E46;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #505762;
+}
+
 @media screen and (min-width: 768px) {
   * {
     scroll-margin: 80px;

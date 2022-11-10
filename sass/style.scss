@@ -315,6 +315,18 @@ body {
     color: $tertiary-color;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: $primary-color;; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: lighten($primary-color, 10%) 
+  }
+
 @media screen and (min-width: 768px) {
 
     * {
